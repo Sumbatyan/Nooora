@@ -436,6 +436,7 @@ body .container .wrapper .content .flex.half input {
 }
 body .container .wrapper.payment-options .flex {
   margin-top: 6px;
+  margin-left: 10px;
 }
 body .container .wrapper.payment-options .flex > div {
   -webkit-box-flex: 1;
@@ -448,6 +449,9 @@ body .container .wrapper.payment-options .flex > div input {
   margin: 0 12px 0 0;
   border: 1px solid #514471;
   border-radius: 4px;
+}
+body .container .wrapper.payment-options .flex > div label {
+  font-size: 12px;
 }
 body .container .wrapper.payment-options .flex > div img:not(:last-of-type) {
   margin-right: 4px;
