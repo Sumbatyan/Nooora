@@ -445,6 +445,7 @@ body .container .wrapper.payment-options .flex > div {
           flex: 1;
 }
 body .container .wrapper.payment-options .flex > div input {
+  display: block;
   width: 15px;
   height: 15px;
   margin: 0 12px 0 0;
@@ -452,6 +453,7 @@ body .container .wrapper.payment-options .flex > div input {
   border-radius: 4px;
 }
 body .container .wrapper.payment-options .flex > div label {
+  display: block;
   font-size: 12px;
 }
 body .container .wrapper.payment-options .flex > div img:not(:last-of-type) {
