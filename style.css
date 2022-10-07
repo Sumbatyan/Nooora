@@ -233,6 +233,7 @@ body .container .time-wrapper .flex label {
   font-size: 12px;
 }
 body .container .time-wrapper .time {
+  display: block;
   width: 55%;
   height: 40px;
   padding: 12px;
