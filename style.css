@@ -461,7 +461,7 @@ body .container .wrapper.payment-options .flex + h4 {
   font-size: 12px;
   font-weight: 300;
   color: #393838;
-  margin: 20px 0 0 28px;
+  margin: 20px 0 0 48px;
 }
 body .container .wrapper.payment-options .flex + h4 span {
   display: inline-block;
