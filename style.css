@@ -439,6 +439,7 @@ body .container .wrapper.payment-options .flex {
   margin-left: 10px;
 }
 body .container .wrapper.payment-options .flex > div {
+  justify-content: flex-start;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
