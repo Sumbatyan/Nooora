@@ -237,6 +237,7 @@ body .container .time-wrapper .time {
   width: 55%;
   height: 40px;
   padding: 12px;
+  background: #fff;
   border-radius: 12px;
   border: 1px solid #C9C9C9;
 }
