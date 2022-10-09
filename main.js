@@ -1,10 +1,8 @@
-defer(function () {
-    $(document).ready(function(){
+    jQuery(document).ready(function(){
         console.log('ready');
     })
 
-    $('.select-area-wrapper .select').click(function(){
+    jQuery('.select-area-wrapper .select').click(function(){
         console.log(1);
-        $('.select-popup').addClass('open')
+        jQuery('.select-popup').addClass('open')
     })
-});
