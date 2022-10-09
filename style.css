@@ -137,7 +137,7 @@ body .select-popup .options {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  overflow: auto;
+  overflow: hidden;
 }
 body .select-popup .options .option {
   display: -webkit-box;
@@ -553,7 +553,7 @@ body .container .offers .items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 body .container .offers .items .item {
   font-size: 11px;
