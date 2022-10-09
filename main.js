@@ -1,31 +1,31 @@
-$('.select-area-wrapper .select').click(function(){
-    $('.select-popup').addClass('open')
+document.querySelector('.select-area-wrapper .select').click(function(){
+    document.querySelector('.select-popup').classList.add('open')
 })
 
-$('.select-popup .close, .select-popup .check-option').click(function(){
-    $('.select-popup').removeClass('open')
+document.querySelector('.select-popup .close, .select-popup .check-option').click(function(){
+    document.querySelector('.select-popup').classList.remove('open')
 })
 
-$('.select-area-wrapper .go').click(function(){
-    $('.second').addClass('active')
+document.querySelector('.select-area-wrapper .go').click(function(){
+    document.querySelector('.second').classList.add('active')
 })
 
-$('.back').click(function(){
-    $(this).closest('.container').parent().removeClass('active');
-    $('.swipe').removeClass('active')
+document.querySelector('.back').click(function(){
+    document.querySelector(this).closest('.container').parent().classList.remove('active');
+    document.querySelector('.swipe').classList.remove('active')
 })
 
-$('.swipe').click(function(){
-    $(this).addClass('active')
+document.querySelector('.swipe').click(function(){
+    document.querySelector(this).classList.add('active')
     setTimeout(function(){
-        $('.third').addClass('active')
+        document.querySelector('.third').classList.add('active')
     }, 300)
 })
 
-$('.submit').click(function(){
-    $('.fourth').addClass('active')
+document.querySelector('.submit').click(function(){
+    document.querySelector('.fourth').classList.add('active')
 })
 
-$('.proceed').click(function(){
-    $('.fifth').addClass('active')
+document.querySelector('.proceed').click(function(){
+    document.querySelector('.fifth').classList.add('active')
 })
