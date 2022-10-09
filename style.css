@@ -1,5 +1,26 @@
+html{
+  height: 100vh;
+  overflow: hidden;
+}
 body {
+  position: relative;
+  height: 100vh;
   margin: 0;
+  overflow: hidden;
+}
+body > div{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow-y: auto;
+  z-index: 1;
+  transition: 0.3s;
+}
+body > div.active{
+ left: 0;
 }
 body * {
   font-family: "Open Sans", sans-serif;
@@ -49,6 +70,13 @@ body .select img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+/* body .second{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: #fff;
+  z-index: 1;
+} */
 body .go {
   font-size: 12px;
   width: 70px;
@@ -292,6 +320,10 @@ body .container .swipe-wrapper .swipe {
   left: 0;
   top: 0;
   height: 100%;
+  transition: 0.3s;
+}
+body .container .swipe-wrapper .swipe.active {
+  left: calc(100% - 52px);
 }
 body .container .swipe-wrapper p {
   font-size: 15px;

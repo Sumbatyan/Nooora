@@ -8,54 +8,226 @@
 </head>
 
 <body>
-    <div class="select-area-wrapper">
-        <h3 class="select">
-            Select Your Area
-            <img src="./images/arrow.png" alt="Arrow Icon">
-        </h3>
-        <button class="go">Go</button>
-    </div>
-     <div class="select-popup"> <!-- toggle class 'open' -->
-        <h4 class="title">
-            Select your Area
-            <img src="./images/close.png" alt="Close Icon">
-        </h4>
-        <div class="search-wrapper">
-            <input type="text" placeholder="Search here">
-            <img src="./images/search.png" alt="Search Icon">
+    <div class="first active">
+        <div class="select-area-wrapper">
+            <h3 class="select">
+                Select Your Area
+                <img src="./images/arrow.png" alt="Arrow Icon">
+            </h3>
+            <button class="go">Go</button>
         </div>
-        <div class="options">
-            <div class="option">
-                <p>Al Bastakiya.</p>
-                <span class="check-option">Select</span>
+         <div class="select-popup"> <!-- toggle class 'open' -->
+            <h4 class="title">
+                Select your Area
+                <img src="./images/close.png" alt="Close Icon" class="close">
+            </h4>
+            <div class="search-wrapper">
+                <input type="text" placeholder="Search here">
+                <img src="./images/search.png" alt="Search Icon">
             </div>
-            <div class="option">
-                <p>Al Karama.</p>
-                <span class="check-option">Select</span>
+            <div class="options">
+                <div class="option">
+                    <p>Al Bastakiya.</p>
+                    <span class="check-option">Select</span>
+                </div>
+                <div class="option">
+                    <p>Al Karama.</p>
+                    <span class="check-option">Select</span>
+                </div>
+                <div class="option selected">
+                    <p>Bur Dubai.</p>
+                    <span class="check-option">Select</span>
+                </div>
+                <div class="option">
+                    <p>Business Bay.</p>
+                    <span class="check-option">Select</span>
+                </div>
+                <div class="option">
+                    <p>Downtown Dubai.</p>
+                    <span class="check-option">Select</span>
+                </div>
+                <div class="option">
+                    <p>Dubai Marina.</p>
+                    <span class="check-option">Select</span>
+                </div>
+                <div class="option">
+                    <p>Al Bastakiya.</p>
+                    <span class="check-option">Select</span>
+                </div>
             </div>
-            <div class="option selected">
-                <p>Bur Dubai.</p>
-                <span class="check-option">Select</span>
+        </div>
+    </div>
+    <div class="second">
+        <div class="container">
+            <div class="header">
+                <img src="./images/arrowleft.png" alt="arrow left" class="back">
+                <h2>Select Date & Time</h2>
             </div>
-            <div class="option">
-                <p>Business Bay.</p>
-                <span class="check-option">Select</span>
+            <div class="calendar" id="table">
+                <div class="flexbox">
+                    <button class="icon" onclick="prevMonth()"><img src="./images/date-arrow-left.png"
+                            alt="arrow left"></button>
+                    <div class="month" id="month-header"></div>
+                    <button class="icon" onclick="nextMonth()"><img src="./images/date-arrow-right.png"
+                            alt="arrow right"></button>
+                </div>
             </div>
-            <div class="option">
-                <p>Downtown Dubai.</p>
-                <span class="check-option">Select</span>
+            <div class="time-wrapper">
+                <h3 class="subtitle">Time you prefer?</h3>
+                <div class="flexbox">
+                    <div class="flex">
+                        <input class="radio" type="radio" id="am" name="time">
+                        <label for="am">AM</label>
+                    </div>
+                    <div class="flex">
+                        <input class="radio" type="radio" id="pm" name="time">
+                        <label for="pm">PM</label>
+                    </div>
+                    <input class="time" type="time">
+                </div>
+                <div class="flex checked-date">
+                    <div>
+                        <span>Date</span>
+                        <p>17 September, 2022</p>
+                    </div>
+                    <div>
+                        <span>Time</span>
+                        <p>10.00 AM</p>
+                    </div>
+                </div>
             </div>
-            <div class="option">
-                <p>Dubai Marina.</p>
-                <span class="check-option">Select</span>
+            <div class="swipe-wrapper">
+                <img src="./images/swipe.png" alt="swipe" class="swipe">
+                <p>Swipe to Confirm</p>
             </div>
-            <div class="option">
-                <p>Al Bastakiya.</p>
-                <span class="check-option">Select</span>
+        </div>
+    </div>
+    <div class="third">
+        <div class="container">
+            <div class="header">
+                <img src="./images/arrowleft.png" alt="arrow left" class="back">
+                <h2>Booking Details</h2>
             </div>
+            <div class="wrapper personal-wrapper">
+                <h3 class="title flexbox">Personal Details <img src="./images/arrow.png" alt="arrow icon"></h3>
+                <div class="content">
+                    <input type="text" value="Name" placeholder="Name">
+                    <input type="email" value="E-mail" placeholder="E-mail">
+                    <div class="flex whatsup">
+                        <img src="./images/whatsup.png" alt="whatsup icon" class="whatsup-icon">
+                        <p>WhatsApp Number</p>
+                    </div>
+                    <div class="flex">
+                        <div class="selectbox">
+                            <div class="selected">
+                                <div class="item"><img src="./images/flag.png" alt="flag"> UAE <img class="arrow"
+                                        src="./images/arrow.png" alt=""></div>
+                            </div>
+                            <div class="option">
+                                <div class="item flex"><img src="./images/flag.png" alt="flag">UAE</div>
+                                <div class="item flex"><img src="./images/flag.png" alt="flag">ARM</div>
+                                <div class="item flex"><img src="./images/flag.png" alt="flag">JAM</div>
+                            </div>
+                        </div>
+                        <div class="flex number">
+                            <span>+971</span>
+                            <input type="text" placeholder="Number" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper address-wrapper">
+                <h3 class="title flexbox">Address Detail <img src="./images/arrow.png" alt="arrow icon"></h3>
+                <div class="content">
+                    <input type="text" value="" placeholder="Apart./Villa No">
+                    <div class="flex half">
+                        <input type="text" value="" placeholder="Building name">
+                        <input type="text" value="" placeholder="Area">
+                    </div>
+                </div>
+            </div>
+            <div class="location">
+                <img class="loc" src="./images/location.png" alt="location icon">
+                <span>Tap to record my location</span>
+                <img class="arrow" src="./images/arrow.png" alt="arrow icon">
+            </div>
+            <div class="offers">
+                <h3 class="subtitle">Time you prefer?</h3>
+                <div class="items">
+                    <p class="item active">Couple Offers</p>
+                    <p class="item">Get 30% Off</p>
+                    <p class="item">Get 10% Off</p>
+                    <p class="item">Couple Offers</p>
+                    <p class="item">Get 30% Off</p>
+                </div>
+            </div>
+            <div class="instructions">
+                <h4>Do you want to add any instructions? <span>Click here</span></h4>
+                <textarea name="instructions" id="instructions" placeholder="Your comments"></textarea>
+                <span>We will try our best to follow your instructions,rescheduling and adjustments to appointment slots are
+                    very likely if there are challenging instructions to be met. </span>
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="fourth">
+        <div class="container fourth">
+            <div class="header">
+                <img src="./images/arrowleft.png" alt="arrow left" class="back">
+                <h2>Payment Details</h2>
+            </div>
+            <div class="wrapper payment-options">
+                <h3 class="title flexbox">Payment options <img src="./images/arrow.png" alt="arrow icon"></h3>
+                <div class="content">
+                    <div class="flex">
+                        <div class="flex">
+                            <input type="checkbox" name="card">
+                            <label for="card">Credit Card</label>
+                        </div>
+                        <div class="flex">
+                            <img src="./images/amex.png" alt="amex">
+                            <img src="./images/mastercard.png" alt="mastercard">
+                            <img src="./images/visa.png" alt="visa">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="flex">
+                            <input type="checkbox" name="postpay">
+                            <label for="postpay">3 Installment</label>
+                        </div>
+                        <div class="flex">
+                            <img src="./images/postpay.png" alt="postpay">
+                        </div>
+                    </div>
+                    <h4>Wish to add more services? <span>Click here</span></h4>
+                </div>
+            </div>
+            <div class="wrapper check-availability">
+                <h3 class="title flexbox">Check availability <img src="./images/arrow.png" alt="arrow icon"></h3>
+                <div class="content">
+                    <h4>Check if the requested time slot is available.</h4>
+                    <a href="">Chat on Whatsapp <img src="./images/whatsupwhite.png" alt="whatsup"></a>
+                    <div>
+                        In case you want confirmed booking – <br />
+                        <a href="">select time slot</a> 24 hours from now.
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions proceed">
+                <button type="submit" class="proceed">Proceed to pay</button>
+            </div>
+        </div>
+    </div>
+    <div class="fifth">
+        <div class="container congrats">
+            <img src="./images/congrats.png" alt="">
+            <h1>Congratulations!</h1>
+            <p>Your booking has<br />been completed successfully</p>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="./main.js"></script>
+    <script src="./calendar.js"></script>
 </body>
 </html>
